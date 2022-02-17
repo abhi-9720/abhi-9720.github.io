@@ -708,6 +708,19 @@ h2 {
 
 }
 
+@media(max-width:700px) {
+
+    .projects h1 {
+        margin-left: 20px;
+
+    }
+
+    .projects h5 {
+        margin-left: 20px !important;
+
+    }
+}
+
 .projects .cards {
     display: flex;
     flex-wrap: wrap;
@@ -741,7 +754,11 @@ h2 {
 
 
 
-
+@media(max-width:700px) {
+    .projects .cards .card {
+        padding: 10px 5px 20px 5px;
+    }
+}
 
 .bgxac {
     color: #ff0a54 !important;
@@ -842,18 +859,18 @@ h2 {
 }
 
 .projects .cards .card .links a {
-    color: var(--main-text-color);
+    color: var(--clearlinkBlue);
     font-weight: 100;
     font-size: 20px;
     transition: transform 0.2s;
 }
 
 .projects .cards .card .links a i {
-    -webkit-text-stroke: 0.01px white;
+    -webkit-text-stroke: 0.01px var(--background-primary);
 }
 
 .projects .cards .card .links a:hover {
-    color: #64ffda !important;
+    color: var(--color-calendar-graph-day-bg) !important;
     transform: scale(1.1);
 }
 
