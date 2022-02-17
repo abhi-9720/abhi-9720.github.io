@@ -2,9 +2,27 @@
 const header = document.querySelector('.navbar');
 const leftemail = document.querySelector('.leftfixed p')
 const forms = document.querySelectorAll('.needs-validation');
+
+
+
+
+
+
+window.addEventListener("resize", function () {
+
+    if (window.screen.width <= 700) {
+        toggleFullScreen();
+    }
+}, false);
+
+function toggleFullScreen() {
+    console.log("called ");
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+    }
+}
+
 (function () {
-
-
     // Loop over them and prevent submission
     Array.prototype.slice.call(forms)
         .forEach((form) => {
