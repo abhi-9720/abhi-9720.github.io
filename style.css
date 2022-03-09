@@ -175,7 +175,7 @@ h2 {
 }
 
 .navbar li>a {
-    color: #040d21 !important;
+
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -820,6 +820,8 @@ h2 {
 
     width: 100%;
     height: 100%;
+    object-fit: contain;
+    background-position: center;
 
 }
 
@@ -849,13 +851,10 @@ h2 {
 
 
 .projects .cards .card .links {
-    width: 100%;
-    margin-top: 10px;
+
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-
+    margin-left: auto;
+    justify-content: center;
 }
 
 .projects .cards .card .links a {
@@ -1185,4 +1184,69 @@ h2 {
 .rtl .expline .event::after {
     left: 0;
     right: -55.8px;
+}
+
+.cards1 {
+    display: flex;
+    flex-wrap: nowrap !important;
+    gap: 20px;
+}
+
+.card1 {
+
+    flex: 1;
+
+}
+
+.card1 .cardBody1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column !important;
+
+}
+
+.card1 .cardBody1 .thumb {
+    border: 1px solid #0affc2;
+    width: 100%;
+    flex: 1;
+
+}
+
+.card1 .cardBody1 .thumb img {
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 800px) {
+    .cards1 {
+
+        flex-direction: column;
+        padding: 0px 5px;
+
+    }
+
+    .card1 h3 {
+        margin-left: 10px;
+    }
+
+    .mls {
+        margin-left: 5px;
+    }
+}
+
+.socialbtns {
+    display: flex;
+    margin-top: 30px;
+    gap: 5px;
+    transition: all 0.25s ease;
+}
+
+.socialbtns a:hover {
+    background-color: white;
+    opacity: 0.9;
+}
+
+.nav-item a:hover {
+    color: #1266f1 !important;
 }

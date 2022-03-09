@@ -45,7 +45,7 @@ window.onscroll = function () {
     // console.log("about height " + document.getElementById('aboutsection').clientHeight);
     // console.log("start of top" + document.getElementById('aboutsection').offsetTop);
 
-    if (top >= 280 && top <= 10333) {
+    if (top >= 280 && top <= 10000) {
         if (top >= 3100) {
 
 

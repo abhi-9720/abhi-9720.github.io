@@ -92,10 +92,9 @@
 
 @media(max-width:800px) {
   .intro-sub {
-
     width: 100%;
     flex-direction: column;
-    padding: 0px 0px 0px 20px;
+    padding: 0px 0px 0px 5px;
     font-size: x-large;
     line-height: 20px;
   }
@@ -839,7 +838,9 @@
 /* ---------------------------------------------- */
 /* Contact Section */
 /* ---------------------------------------------- */
-/* .contact-section {} */
+.contact-section {
+  padding: 50px 0;
+}
 
 .contact-section strong {
   display: block;
