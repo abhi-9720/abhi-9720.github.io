@@ -1201,7 +1201,7 @@ h2 {
 .card1 .cardBody1 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column !important;
 
 }
