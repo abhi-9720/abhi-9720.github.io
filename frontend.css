@@ -363,6 +363,7 @@
   /* contact section */
   .contact-form {
     margin-bottom: 40px;
+    padding: 0px 10px;
   }
 
   .contact-section div>i {

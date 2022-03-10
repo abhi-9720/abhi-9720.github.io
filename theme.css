@@ -1113,8 +1113,8 @@
 @media(max-width:1000px) {
 
   .leftfixed {
-    right: 0;
-    left: 0px;
+    right: -5px;
+
   }
 }
 

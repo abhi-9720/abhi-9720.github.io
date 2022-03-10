@@ -44,8 +44,8 @@ window.onscroll = function () {
     const homeheight = parseInt(document.getElementById('home').clientHeight);
     // console.log("about height " + document.getElementById('aboutsection').clientHeight);
     // console.log("start of top" + document.getElementById('aboutsection').offsetTop);
-
-    if (top >= 280 && top <= 10000) {
+    console.log(top);
+    if (top >= 280 && top <= 9022.7021484375) {
         if (top >= 3100) {
 
 
@@ -92,9 +92,5 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
-function scrollheader() {
-    let pageHeight = window.innerHeight;
-    window.scrollBy(0, pageHeight);
-    console.log("pageHeight : ", pageHeight);
-}
+
 

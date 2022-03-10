@@ -169,10 +169,6 @@ h2 {
     }
 }
 
-.navbar {
-    background-color: transparent !important;
-}
-
 .navbar ul {
     margin: 0 auto;
     float: right;
@@ -222,7 +218,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .main-container .intro {
@@ -542,11 +537,11 @@ h2 {
 }
 
 .experience_container {
-    background-color: #111827;
+    background-color: #040d21;
     padding: 40px 0;
 }
 
-.experience h4 {
+.experience h2 {
     color: var(--color-light);
     margin-bottom: 50px;
 }
@@ -650,7 +645,6 @@ h2 {
     line-height: 1.76;
     color: var(--color-light);
     font-size: 13px;
-
 
 
 }
@@ -950,7 +944,7 @@ h2 {
 
 @media (max-width: 1024px) {
     .grad-text {
-        font-size: 30px !important;
+        font-size: 40px !important;
         line-height: 48px !important;
     }
 
@@ -1195,15 +1189,36 @@ h2 {
 
 .slider {
     width: 100%;
-    height: 450px;
+    height: 400px;
     text-align: center;
     overflow: hidden;
-    -webkit-overflow-scrolling: touch;
+    background-color: rebeccapurple;
+    border: 3px solid red;
+}
+
+.slider>a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+    border: 1px solid rebeccapurple;
 }
 
 
 
+.slider>a:active {
+    top: 1px;
+}
 
+.slider>a:focus {
+    background: #000;
+}
 
 
 .slides {
@@ -1213,19 +1228,25 @@ h2 {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 
+
+    background-color: royalblue;
     gap: 20px;
+
+
+
 }
 
 .slides>div {
     scroll-snap-align: start;
     flex-shrink: 0;
-    width: 600px;
+    width: 700px;
     height: 100%;
 
     border-radius: 20px;
 
-
+    background: #eee;
     transform-origin: center center;
     transform: scale(1);
     transition: transform 0.5s;
@@ -1236,71 +1257,51 @@ h2 {
     align-items: center;
     flex-direction: column;
 
-    user-select: none;
-    touch-action: pan-y
+
+
+
 }
 
 
-img {
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
-    user-drag: none;
-}
+
 
 
 
 .slideBody {
-
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
-
     display: flex;
     flex-direction: column;
-    border-radius: 1rem;
-    padding: 3px 4px;
-
-
-
-
-}
-
-
-
-.slideBody .thumb {
-    width: 100% !important;
-    height: 100% !important;
-    flex: 1 1 0%;
     border-radius: 20px;
 
-
-
-
-
-    /* linear-gradient(90.07deg, rgb(162, 101, 242) -16.29%, rgb(152, 94, 255) -9.5%, rgb(234, 154, 145) 118.76%, rgba(225, 147, 157, 0.77) 127.64%); */
-
-
-    border-radius: 1rem;
-    background-image: linear-gradient(to right, #985eff, #ea9a91);
-    -webkit-box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%),
-        0 1px 3px 1px rgb(60 64 67 / 15%) !important;
-    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%),
-        0 1px 3px 1px rgb(60 64 67 / 15%) !important;
 }
 
+.slideBody .tags {
+    background-color: rebeccapurple;
+}
 
+.slideBody .thumb {
+    width: 100 !important;
+    height: 100% !important;
+
+    border-radius: 20px;
+
+}
+
+.slideBody .thumb>div {
+    width: 100% !important;
+    height: 100% !important;
+
+    border-radius: 20px;
+}
 
 .slideBody .thumb img {
-    height: 300px;
+    height: 80% !important;
     width: 100%;
-    background-size: cover;
-
-    border-radius: 1rem;
-
+    border-radius: 20px;
 
 }
 
@@ -1311,10 +1312,19 @@ img {
     transition: all 0.25s ease;
 }
 
+.socialbtns a:hover {
+    background-color: white;
+    opacity: 0.9;
+}
+
+.nav-item a:hover {
+    color: #1266f1 !important;
+}
+
 
 .slides::-webkit-scrollbar {
-    width: 0px;
-    height: 4px;
+    width: 10px;
+    height: 10px;
 }
 
 .slides::-webkit-scrollbar-thumb {
@@ -1324,24 +1334,4 @@ img {
 
 .slides::-webkit-scrollbar-track {
     background: transparent;
-}
-
-
-@media(max-width:900px) {
-
-
-
-    .slides>div {
-        scroll-snap-align: start;
-        flex-shrink: 0;
-        width: 100vw;
-
-
-    }
-}
-
-.carousel-caption h5 {
-    color: #6dd5ed !important;
-
-
 }
