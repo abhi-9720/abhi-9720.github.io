@@ -544,6 +544,13 @@ h2 {
 .experience_container {
     background-color: #111827;
     padding: 40px 0;
+    background-image: url('./img/Splash-BG.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+
 }
 
 .experience h4 {
@@ -563,8 +570,8 @@ h2 {
     /* box-shadow: 1rem 0 3rem #000; */
 
 
-    box-shadow: 0 0 0 1px rgb(255 255 255 / 10%), 0 3px 2px rgb(0 0 0 / 4%), 0 7px 5px rgb(0 0 0 / 2%), 0 13px 10px rgb(0 0 0 / 2%), 0 22px 17px rgb(0 0 0 / 2%) !important;
-    background-color: #0c162d;
+
+    background-color: #fff;
     transition: all .4s;
     border: 1px solid transparent;
     padding: 20px 40px 20px 20px;
@@ -576,7 +583,10 @@ h2 {
     flex-direction: column;
     max-width: 900px;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    box-shadow: 0 50px 100px -20px rgb(50 50 93 / 25%), 0 30px 60px -30px rgb(0 0 0 / 30%), inset 0 -2px 6px 0 rgb(10 37 64 / 35%) !important;
+    border-radius: 16px;
+
+    box-shadow: 0 3px 6px 0 rgb(140 152 164 / 25%);
+    transition: all 0.3s ease-in;
 
 }
 
@@ -587,7 +597,9 @@ h2 {
 
 .experience .card:hover {
 
-    border: 1px solid #0d5ae9;
+    border: 1px solid #55718d;
+    background-color: #040d21;
+    color: white !important;
 
 }
 
@@ -621,7 +633,7 @@ h2 {
 .experience .card h3 {
     margin: 0;
     margin-bottom: 12px;
-    color: #64ffda;
+    color: #1a73e8;
 }
 
 .experience .card h4 {
@@ -633,7 +645,7 @@ h2 {
 
 .experience .card h4.company {
     /* color: rgb(88 199 250 / 100%); */
-    color: #FED766;
+    color: #424242;
 }
 
 .experience .card h4.company::before {
@@ -648,8 +660,8 @@ h2 {
 .experience .card .description p {
     text-align: justify;
     line-height: 1.76;
-    color: var(--color-light);
-    font-size: 13px;
+
+    font-size: 16px;
 
 
 
@@ -675,10 +687,10 @@ h2 {
 }
 
 .tech {
-    color: #00ffff;
+    color: #635bff;
     position: relative;
-    font-weight: 300;
-    font-size: small;
+    font-weight: 800;
+    font-size: 14px;
 }
 
 .tech::before {
@@ -1073,7 +1085,7 @@ h2 {
     border-left: 3px solid #0affc2;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
-    background: rgba(114, 124, 245, 0.09);
+    background: transparent;
     margin: 0 auto;
     letter-spacing: 0.2px;
     position: relative;
