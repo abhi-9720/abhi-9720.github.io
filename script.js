@@ -44,7 +44,7 @@ window.onscroll = function () {
     const homeheight = parseInt(document.getElementById('home').clientHeight);
     // console.log("about height " + document.getElementById('aboutsection').clientHeight);
     // console.log("start of top" + document.getElementById('aboutsection').offsetTop);
-    console.log(top);
+
     if (top >= 280 && top <= 9022.7021484375) {
         if (top >= 3100) {
 
@@ -85,6 +85,7 @@ function reveal() {
 
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("active");
+
         } else {
             reveals[i].classList.remove("active");
         }
@@ -92,5 +93,28 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+console.log(document.querySelector('.nav-item  a'));
+
+let navlinks = document.querySelectorAll('.nav-item  a')
+console.log(navlinks);
+
+for (let i = 0; i < navlinks.length; i++) {
+
+    navlinks[i].addEventListener('click', function () {
+
+
+        document.querySelector(".navbar-collapse").classList.remove('show');
+    });
+}
+
+
+document.querySelector(".first-button").addEventListener('click', (e) => {
+    console.log(e);
+    var element = document.querySelector(".animated-icon1");
+    element.classList.toggle("open");
+
+})
+
 
 
