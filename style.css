@@ -171,7 +171,7 @@ h2 {
 @media(max-width:1024px) {
     .socialbtns {
         position: absolute;
-        bottom: 120px;
+        bottom: 130px;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -249,7 +249,7 @@ h2 {
 
 
     #home .container {
-        padding: 0;
+
         color: white !important;
     }
 }
