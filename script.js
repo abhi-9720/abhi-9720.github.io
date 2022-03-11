@@ -118,6 +118,10 @@ buttonRight.onclick = function () {
     }
 
     document.querySelector('.slides').scrollLeft += scroll;
+    if (document.querySelector('.slides').scrollLeft > scroll * 2) {
+        document.querySelector('.slides').scrollLeft = 0;
+    }
+
 };
 buttonLeft.onclick = function () {
     let scroll = 600;
@@ -125,4 +129,8 @@ buttonLeft.onclick = function () {
         scroll = 300;
     }
     document.querySelector('.slides').scrollLeft -= scroll;
+    console.log("=> ", document.querySelector('.slides').scrollLeft)
+
+
+
 };

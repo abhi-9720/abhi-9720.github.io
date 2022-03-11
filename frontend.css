@@ -140,19 +140,6 @@
   color: #f55247 !important;
 }
 
-.fa-linkedin {
-
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-  background: -webkit-linear-gradient(126deg, #0257ff 0%, #00aeff 100%);
-  transition: all 0.25s ease;
-
-
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: #0e76a8;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
 
 .global-nav__logo {
   color: #0a66c2;
@@ -220,7 +207,7 @@
   color: #00a1f1 !important;
 }
 
-.fa-windows {
+.fa-twitter {
   color: #00a1f1 !important;
 }
 
@@ -240,8 +227,8 @@
   color: #ed008c !important;
 }
 
-.fa-confluence {
-  color: #0052cc !important;
+.fa-linkedin {
+  color: #0a66c2 !important;
 }
 
 .fa-mobile-alt,
@@ -275,7 +262,7 @@
 }
 
 .github-icon :hover,
-.fa-facebook-f :hover,
+.fa-facebook-f:hover,
 .fa-linkedin:hover,
 .fa-envelope:hover,
 .fa-instagram:hover,
