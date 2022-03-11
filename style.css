@@ -153,13 +153,11 @@ h2 {
 .socialbtns {
     display: flex;
     align-items: center;
-    gap: 20px;
-
 }
 
 .socialbtns a {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 10px;
     background-color: white;
     padding: 10px;
     border-radius: 50%;
@@ -170,9 +168,8 @@ h2 {
 
 @media(max-width:1024px) {
     .socialbtns {
-
         position: absolute;
-        bottom: 70px;
+        bottom: 120px;
     }
 }
 
@@ -284,7 +281,6 @@ h2 {
 
     .main-container .intro .details .mail,
     .main-container .intro .details .location {
-        padding-left: 20px;
         width: 100%;
         text-align: left !important;
     }
@@ -482,7 +478,6 @@ h2 {
 }
 
 .expertise .card {
-    z-index: 1000;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -490,6 +485,7 @@ h2 {
     box-shadow: none;
     background-color: transparent;
     z-index: 1000;
+    margin-top: 20px;
 
 
 
@@ -595,7 +591,7 @@ h2 {
 
 .experience_container {
     background-color: #111827;
-    padding: 40px 0 0 40px;
+    padding: 0;
     background-image: url('./img/Splash-BG.svg');
 
     background-size: contain;
