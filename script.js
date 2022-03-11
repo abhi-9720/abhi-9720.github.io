@@ -105,12 +105,14 @@ for (let i = 0; i < navlinks.length; i++) {
 
 
         document.querySelector(".navbar-collapse").classList.remove('show');
+        var element = document.querySelector(".animated-icon1");
+        element.classList.toggle("open");
     });
 }
 
 
 document.querySelector(".first-button").addEventListener('click', (e) => {
-    console.log(e);
+
     var element = document.querySelector(".animated-icon1");
     element.classList.toggle("open");
 

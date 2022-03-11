@@ -80,7 +80,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: #5e5e5e80;
+    background: transparent;
 }
 
 
@@ -559,7 +559,7 @@ h2 {
     padding: 40px 0;
     background-image: url('./img/Splash-BG.svg');
     background-size: auto;
-    background-attachment: fixed;
+
 
     background-position-x: 100px;
     background-position-y: 100px;
@@ -718,6 +718,15 @@ h2 {
     .experience .card {
 
         margin-left: 20px;
+    }
+
+    .experience_container {
+        background-position: center;
+        background-size: cover;
+
+        /* transform: rotate(90deg);
+         */
+
     }
 
 }
@@ -1317,11 +1326,7 @@ img {
     width: 100% !important;
     height: 100% !important;
     flex: 1 1 0%;
-
-
     border-radius: 1rem;
-
-
     padding: 10px;
 
 
@@ -1334,7 +1339,7 @@ img {
 
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 
-    height: 290px;
+    height: 280px;
     width: 100%;
     background-size: cover;
     object-fit: cover;
@@ -1364,100 +1369,43 @@ img {
 
 
 
+
+
 .slides::-webkit-scrollbar {
-    width: 0px;
+    width: 15px;
     height: 10px;
 }
 
 .slides::-webkit-scrollbar-track {
-    border: 3px solid #5e6472;
-    background-color: #082032;
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
 }
 
 .slides::-webkit-scrollbar-thumb {
     background: linear-gradient(45deg, rgb(6, 222, 225), rgb(121, 255, 108));
+
 }
 
 
-/*  To customize the sliding buttons*/
 
 
-.slides::-webkit-scrollbar-button:single-button {
-    background-color: #082032;
-    display: block;
-    background-size: 10px;
-    background-repeat: no-repeat;
+
+
+/* Handle on hover */
+.slides::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, rgb(6, 222, 225), rgb(121, 255, 108));
 }
 
-/* Up */
-.slides::-webkit-scrollbar-button:single-button:vertical:decrement {
-    border-radius: 5px 5px 0 0;
-    height: 16px;
-    width: 16px;
-    background-position: center 4px;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(121, 255, 108)'><polygon points='50,00 0,50 100,50'/></svg>");
+/* Track */
+.slides::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
 }
 
-.slides::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(6, 222, 225)'><polygon points='50,00 0,50 100,50'/></svg>");
+/* Handle */
+.slides::-webkit-scrollbar-thumb {
+    border-radius: 10px;
 }
-
-.slides::-webkit-scrollbar-button:single-button:vertical:decrement:active {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='50,00 0,50 100,50'/></svg>");
-}
-
-/* Down */
-.slides::-webkit-scrollbar-button:single-button:vertical:increment {
-    border-radius: 0px 0px 5px 5px;
-    height: 16px;
-    width: 16px;
-    background-position: center 4px;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(121, 255, 108)'><polygon points='0,0 100,0 50,50'/></svg>");
-}
-
-.slides::-webkit-scrollbar-button:single-button:vertical:increment:hover {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(6, 222, 225)'><polygon points='0,0 100,0 50,50'/></svg>");
-}
-
-.slides::-webkit-scrollbar-button:single-button:vertical:increment:active {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='0,0 100,0 50,50'/></svg>");
-}
-
-/* Left */
-.slides::-webkit-scrollbar-button:single-button:horizontal:decrement {
-    border-radius: 5px 0px 0 5px;
-    height: 12px;
-    width: 12px;
-    background-position: 3px 3px;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(121, 255, 108)'><polygon points='0,50 50,100 50,0'/></svg>");
-}
-
-.slides::-webkit-scrollbar-button:single-button:horizontal:decrement:hover {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(6, 222, 225)'><polygon points='0,50 50,100 50,0'/></svg>");
-}
-
-.slides::-webkit-scrollbar-button:single-button:horizontal:decrement:active {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='0,50 50,100 50,0'/></svg>");
-}
-
-/* Right */
-.slides::-webkit-scrollbar-button:single-button:horizontal:increment {
-    border-radius: 0 5px 5px 0;
-    height: 12px;
-    width: 12px;
-    background-position: 3px 3px;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(121, 255, 108)'><polygon points='0,0 0,100 50,50'/></svg>");
-}
-
-.slides::-webkit-scrollbar-button:single-button:horizontal:increment:hover {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(6, 222, 225)'><polygon points='0,0 0,100 50,50'/></svg>");
-}
-
-.slides::-webkit-scrollbar-button:single-button:horizontal:increment:active {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='0,0 0,100 50,50'/></svg>");
-}
-
-
 
 
 
@@ -1488,6 +1436,8 @@ img {
 
     }
 }
+
+
 
 .carousel-caption h5 {}
 
