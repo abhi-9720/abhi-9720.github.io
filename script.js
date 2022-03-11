@@ -134,3 +134,10 @@ buttonLeft.onclick = function () {
 
 
 };
+
+
+function scrollheader() {
+    let pageHeight = window.innerHeight;
+    window.scrollBy(0, pageHeight);
+    console.log("pageHeight : ", pageHeight);
+}
