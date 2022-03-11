@@ -1554,9 +1554,11 @@ img {
 
 
 
-.nav-item a:hover {
-    color: #4466f2 !important;
-    background-color: #f7f6ff !important;
+@media(min-width:1000px) {
+    .nav-item a:hover {
+        color: #4466f2 !important;
+        background-color: #f7f6ff !important;
+    }
 }
 
 
