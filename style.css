@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -141,9 +141,7 @@ h2 {
     }
 }
 
-.navbar {
-    background-color: transparent !important;
-}
+
 
 .navbar ul {
     margin: 0 auto;
@@ -1770,11 +1768,11 @@ img {
         transition: all 15s cubic-bezier(0.075, 0.82, 0.165, 1);
         pointer-events: auto;
         visibility: visible !important;
-        backdrop-filter: blur(0.625rem);
-        -webkit-backdrop-filter: blur(.625rem);
+
         transition: all .4s ease;
         margin-top: 0;
         background-color: #111827 !important;
+
 
     }
 
@@ -1784,17 +1782,19 @@ img {
         border-radius: 50%;
         transition: all .4s ease;
 
+
     }
 
     .navbar-collapse.show {
         transform: scale(1);
         margin-top: 20px;
         border-radius: 0%;
+        z-index: 10000;
 
 
 
-        height: 88vh;
-        background: #111827 !important;
+        height: 90vh;
+
     }
 
     .navbar-light .navbar-nav .nav-link {
