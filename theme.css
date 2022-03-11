@@ -44,6 +44,14 @@
   cursor: grab;
 } */
 @media(max-width:1000px) {
+
+  .btn-primary {
+    color: #1266f1 !important;
+    background-color: #fff !important;
+    font-size: 23px !important;
+
+  }
+
   #home::before {
     content: ' ';
     position: fixed;
