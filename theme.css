@@ -30,11 +30,12 @@
 #home {
   cursor: -webkit-grab;
   cursor: grab;
+  background-color: #111827;
 }
 
 #home::before {
   content: "";
-  background-color: #040d21;
+
   position: absolute;
   top: 0;
   left: 0;
