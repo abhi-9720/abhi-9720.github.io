@@ -150,6 +150,26 @@ h2 {
     float: right;
 }
 
+.socialbtns {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.socialbtns a {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+@media(max-width:1024px) {
+    .socialbtns {
+
+        position: absolute;
+        bottom: 70px;
+    }
+}
+
 .navbar li>a {
 
     font-size: 14px;
@@ -408,20 +428,22 @@ h2 {
     position: absolute;
     left: 0;
     top: -5%;
-    height: 66%;
+    height: 56%;
+    z-index: 0;
 
 }
 
 .sideimg2 {
     position: absolute;
     right: 0;
-    bottom: 0;
-    height: 60%;
+    bottom: -30px;
+    height: 50%;
+    z-index: 0;
 }
 
 .expertise {
     padding: 0%;
-
+    z-index: 1000;
 }
 
 .expertise h1 {
@@ -460,6 +482,7 @@ h2 {
     flex-direction: row;
     box-shadow: none;
     background-color: transparent;
+    z-index: 1000;
 
 
 
@@ -478,7 +501,10 @@ h2 {
 
     .sideimg2 {
         /* display: none; */
-        height: 20%;
+        height: 15%;
+        right: 0px;
+        bottom: -40px;
+        z-index: 1000 !important;
 
     }
 }
@@ -494,6 +520,7 @@ h2 {
     cursor: pointer;
     min-width: fit-content;
     color: var(--color-light);
+    z-index: 1000;
 
 
 
@@ -512,7 +539,8 @@ h2 {
     }
 
     .expertise .card .item img {
-        height: 48px !important
+        height: 48px !important;
+        z-index: 1000;
     }
 
     .expertise .card .item i {
