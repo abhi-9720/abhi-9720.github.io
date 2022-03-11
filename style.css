@@ -265,6 +265,11 @@ h2 {
         flex: 0 0 60%;
 
 
+
+    }
+
+    .main-container .intro .details {
+        color: white !important;
     }
 }
 
