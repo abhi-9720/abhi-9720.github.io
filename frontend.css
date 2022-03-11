@@ -67,7 +67,6 @@
   transition: all 0.25s ease;
 }
 
-
 .fa-facebook {
   color: #3a0ca3 !important;
   transition: all 0.25s ease;
@@ -276,12 +275,13 @@
 }
 
 .github-icon :hover,
-.fa-facebook-square:hover,
+.fa-facebook-f :hover,
 .fa-linkedin:hover,
 .fa-envelope:hover,
 .fa-instagram:hover,
 .fa-linkedin:hover,
-.fa-facebook-square:hover {
+.fa-facebook-square:hover,
+.fa-twitter:hover {
   transform: scale(1.2);
 }
 

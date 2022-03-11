@@ -22,20 +22,7 @@ function toggleFullScreen() {
     }
 }
 
-(function () {
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms)
-        .forEach((form) => {
-            form.addEventListener('submit', (event) => {
-                if (!form.checkValidity()) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-            }, false);
-        })
 
-})()
 
 window.onscroll = function () {
     const top = window.scrollY;
@@ -120,3 +107,22 @@ document.querySelector(".first-button").addEventListener('click', (e) => {
 
 
 
+const buttonRight = document.getElementById('slideRight');
+const buttonLeft = document.getElementById('slideLeft');
+
+buttonRight.onclick = function () {
+
+    let scroll = 600;
+    if (window.screen.width <= 1000) {
+        scroll = 300;
+    }
+
+    document.querySelector('.slides').scrollLeft += scroll;
+};
+buttonLeft.onclick = function () {
+    let scroll = 600;
+    if (window.screen.width <= 1000) {
+        scroll = 300;
+    }
+    document.querySelector('.slides').scrollLeft -= scroll;
+};
