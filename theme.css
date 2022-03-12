@@ -2,7 +2,7 @@
 /* SECTION TITLE */
 /* ---------------------------------------------- */
 .section-title {
-  color: #2c3e50;
+
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 40px;
@@ -10,7 +10,46 @@
   text-align: center;
 }
 
-.section-title::after {
+.dividersectionWrapper {
+
+  background-color: #181818;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+
+
+}
+
+
+
+.dividersection {
+  background-color: #00e472;
+
+  height: 2px;
+  width: 80%;
+
+
+}
+
+#contactsection h2 {
+  color: #00e472;
+  font-weight: 500;
+
+}
+
+.contactby i {
+  color: #00e472 !important;
+
+}
+
+.contact-number span,
+.contact-number spana {
+  color: white !important;
+}
+
+#contactForm .section-title::after {
   background: url("https://raw.githubusercontent.com/tbaltrushaitis/cv/master/src/assets/img/section-divider.png") no-repeat 0 0;
   bottom: -28px;
   content: "";
@@ -20,6 +59,28 @@
   position: absolute;
   right: 0;
   width: 113px;
+}
+
+#contactForm button {
+  font-size: 17px;
+  display: flex;
+  width: 200px;
+  align-items: center;
+  padding: 0.8em 1.2em;
+  border-radius: 4px;
+  border: 0;
+  font-weight: 700;
+  background: #00e472;
+  color: #181818;
+
+  cursor: pointer;
+}
+
+#contactForm button svg {
+
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 15px;
 }
 
 #edu h2 {
@@ -879,7 +940,11 @@
 /* ---------------------------------------------- */
 .contact-section {
   padding: 50px 0;
+  background-color: #111827 !important;
+
 }
+
+
 
 .contact-section strong {
   display: block;
@@ -912,7 +977,9 @@
 
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   padding: 20px;
+
 
 }
 

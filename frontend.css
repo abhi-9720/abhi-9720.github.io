@@ -351,6 +351,7 @@
   .contact-form {
     margin-bottom: 40px;
     padding: 0px 10px;
+    color: white !important;
   }
 
   .contact-section div>i {
@@ -375,6 +376,12 @@
   .service-wrap>div:nth-child(4) {
     margin-bottom: 0;
   }
+
+  .form-outline .form-control {
+    color: #fff !important;
+  }
+
+  .form-outline .form-control {}
 
   /* HOME TWO */
   #homeTwo:before {

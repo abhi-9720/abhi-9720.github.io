@@ -171,16 +171,15 @@ window.addEventListener("scroll", () => {
 
         if (pageYOffset >= sectionTop - sectionHeight / 3) {
             current = section.getAttribute("id");
-            console.log("current section id : " + current);
+
         }
     });
-    console.log("----------------------------");
+
 
     navLi.forEach((li) => {
-        console.log("current li " + li);
+
         li.classList.remove("active");
         if (li.classList.contains(current)) {
-            console.log("current : " + li.classList + "  " + li.classList.contains(current));
             li.classList.add("active");
         }
     });
