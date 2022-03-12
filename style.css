@@ -1619,7 +1619,8 @@ img {
 } */
 
 .animated-icon1 span {
-    background: crimson;
+    background: #e3f2fd;
+
 }
 
 .animated-icon2 span {
@@ -1844,6 +1845,12 @@ img {
     height: 4px;
     background: #7983ff;
     z-index: 10000;
+}
+
+@media(max-width:1000) {
+    #scroll-progress {
+        height: 2px;
+    }
 }
 
 nav .container-fluid ul li {
