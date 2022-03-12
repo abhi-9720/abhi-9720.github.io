@@ -132,14 +132,11 @@ h1 {
     }
 }
 
-h2 {
-    font-size: 2em;
-    margin: 0
-}
+
 
 @media screen and (max-width: 1024px) {
     h2 {
-        font-size: 0.5em
+        font-size: 1rem
     }
 }
 
@@ -763,12 +760,8 @@ h2 {
 
 .experience .card .description p {
     text-align: justify;
-    line-height: 1.76;
 
     font-size: 16px;
-
-
-
 }
 
 .technology {
@@ -1216,9 +1209,9 @@ h2 {
     max-width: 80%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     .expline {
-        max-width: 98%;
+        max-width: 100%;
         padding: 0px;
     }
 }
@@ -1621,8 +1614,12 @@ img {
     transition: .25s ease-in-out;
 }
 
-.animated-icon1 span {
+/* .animated-icon1 span {
     background: #fff;
+} */
+
+.animated-icon1 span {
+    background: crimson;
 }
 
 .animated-icon2 span {
@@ -1775,7 +1772,7 @@ img {
         justify-content: center;
         align-items: center;
         gap: 10px;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .navsocialwrapper a {
@@ -1791,19 +1788,29 @@ img {
         transition: all 15s cubic-bezier(0.075, 0.82, 0.165, 1);
         pointer-events: auto;
         visibility: visible !important;
-
+        backdrop-filter: blur(10px);
         transition: all .4s ease;
         margin-top: 0;
         background-color: #111827 !important;
 
+        box-shadow: none !important;
+        z-index: 2;
+        backdrop-filter: blur(10px) saturate(125%);
+        /* Blur the background */
+        /* 10px Gaussian Blur and saturate for fluent design */
+        -webkit-backdrop-filter: blur(10px) saturate(125%);
+
 
     }
+
+
 
     .navbar-collapse {
         transform: scale(0);
         will-change: transform;
         border-radius: 50%;
         transition: all .4s ease;
+
 
 
     }
@@ -1816,11 +1823,41 @@ img {
 
 
 
-        height: 90vh;
+
+        height: 98vh;
 
     }
 
     .navbar-light .navbar-nav .nav-link {
         color: #fff !important;
     }
+
+    .navbar>.container-fluid {
+        justify-content: flex-end !important;
+    }
+}
+
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    width: 0%;
+    height: 4px;
+    background: #7983ff;
+    z-index: 10000;
+}
+
+nav .container-fluid ul li {
+    border-radius: 10px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+nav .container-fluid ul li.active {
+    color: #4466f2 !important;
+    background-color: #7366ff26 !important;
+}
+
+nav .container-fluid ul li.active a {
+    color: #4466f2 !important;
+
 }

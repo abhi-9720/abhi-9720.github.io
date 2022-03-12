@@ -16,7 +16,7 @@ window.addEventListener("resize", function () {
 }, false);
 
 function toggleFullScreen() {
-    console.log("called ");
+
     if (!document.fullscreenElement) {
         document.documentElement.requestFullscreen();
     }
@@ -81,10 +81,10 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-console.log(document.querySelector('.nav-item  a'));
+
 
 let navlinks = document.querySelectorAll('.nav-item  a')
-console.log(navlinks);
+
 
 for (let i = 0; i < navlinks.length; i++) {
 
@@ -129,7 +129,7 @@ buttonLeft.onclick = function () {
         scroll = 300;
     }
     document.querySelector('.slides').scrollLeft -= scroll;
-    console.log("=> ", document.querySelector('.slides').scrollLeft)
+
 
 
 
@@ -139,5 +139,49 @@ buttonLeft.onclick = function () {
 function scrollheader() {
     let pageHeight = window.innerHeight;
     window.scrollBy(0, pageHeight);
-    console.log("pageHeight : ", pageHeight);
+
 }
+
+
+const scrollProgress = document.getElementById('scroll-progress');
+const height =
+    document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+window.addEventListener('scroll', () => {
+    const scrollTop =
+        document.body.scrollTop || document.documentElement.scrollTop;
+    scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
+});
+
+
+
+
+
+
+
+const sections = document.querySelectorAll("section");
+
+const navLi = document.querySelectorAll("nav .container-fluid ul li")
+
+window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop;// this give section top , depth of section from 0
+        const sectionHeight = section.clientHeight; // height of each section
+
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+            current = section.getAttribute("id");
+            console.log("current section id : " + current);
+        }
+    });
+    console.log("----------------------------");
+
+    navLi.forEach((li) => {
+        console.log("current li " + li);
+        li.classList.remove("active");
+        if (li.classList.contains(current)) {
+            console.log("current : " + li.classList + "  " + li.classList.contains(current));
+            li.classList.add("active");
+        }
+    });
+});

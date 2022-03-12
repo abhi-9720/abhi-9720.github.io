@@ -5,14 +5,14 @@
   color: #2c3e50;
   font-size: 50px;
   line-height: 50px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   position: relative;
   text-align: center;
 }
 
 .section-title::after {
   background: url("https://raw.githubusercontent.com/tbaltrushaitis/cv/master/src/assets/img/section-divider.png") no-repeat 0 0;
-  bottom: -40px;
+  bottom: -28px;
   content: "";
   height: 15px;
   left: 0;
@@ -22,6 +22,9 @@
   width: 113px;
 }
 
+#edu h2 {
+  font-size: 2rem !important;
+}
 
 /* ---------------------------------------------- */
 /* HOME */
@@ -45,10 +48,11 @@
 } */
 @media(max-width:1000px) {
 
-  .btn-primary {
-    color: #1266f1 !important;
-    background-color: #fff !important;
-    font-size: 22px !important;
+  .details .btn-primary {
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.212) !important;
+    border: 2px solid white;
+    font-size: 20px !important;
 
   }
 
