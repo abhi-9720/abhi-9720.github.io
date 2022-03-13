@@ -801,7 +801,8 @@ h1 {
         left: 0;
         background-color: white;
         background: url('./img/Splash-BG.svg') no-repeat center center;
-        background-size: cover;
+        /* background-size: cover; */
+        background-size: 480%;
         will-change: transform;
         z-index: -1;
     }
