@@ -964,7 +964,7 @@ p[data-bio]::after {
 }
 
 .projects .cards .card h3 {
-    color: #fff9;
+    color: #f7f6ff;
     font-weight: 400;
     font-size: 28px;
     text-transform: capitalize;
@@ -1034,7 +1034,7 @@ p[data-bio]::after {
     padding: 12px 0;
     line-height: 1.5;
     text-align: justify;
-    color: var(--main-text-color);
+    color: rgba(255, 255, 255, 0.829);
     padding: 28px 32px;
     background-color: transparent;
 }
@@ -1079,9 +1079,10 @@ p[data-bio]::after {
     border-radius: 8px;
     padding: 2px 8px;
     white-space: nowrap;
-    background-color: #7366ff33;
-    color: #4466f2 !important;
-    line-height: 1.75;
+    background-color: #f0f7ff;
+    border: 1px solid #e0e3e7;
+    color: #0072e5;
+    font-weight: 500;
 }
 
 #vantajs {
