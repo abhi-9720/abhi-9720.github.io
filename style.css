@@ -211,6 +211,10 @@ h1 {
     padding: 0px 0px 0px 180px;
 }
 
+* {
+    cursor: url("./img/cursor.svg") 16 16, pointer;
+}
+
 @media screen and (max-width: 1024px) {
     .main-container .intro {
         padding: 0;
@@ -271,6 +275,7 @@ h1 {
 
 .main-container .intro .details h5 {
     color: #51ceb5;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 .main-container .intro .details h1 {
@@ -443,8 +448,9 @@ p[data-bio]::after {
     width: 250px;
     height: 250px;
     background: url('./img/profile/blob.svg') no-repeat;
-    background-position: top -80px left -70px;
-    background-size: 149% 149%;
+    background-position: top -120px left -70px;
+    background-size: 159% 159%;
+    border: 1px solid rebeccapurple;
 }
 
 .profile-header-container .top-container {
@@ -481,8 +487,8 @@ p[data-bio]::after {
         align-items: center;
     }
     .profile-header-container .top-container .profile-image {
-        height: 180px !important;
-        width: 180px !important;
+        height: 190px !important;
+        width: 190px !important;
         border-radius: 50%;
         /* border: 3px solid #00ce79; */
         background-position: 0 0;
