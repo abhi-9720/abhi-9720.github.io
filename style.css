@@ -445,12 +445,11 @@ p[data-bio]::after {
 }
 
 .profile-header-container {
-    width: 250px;
-    height: 250px;
-    background: url('./img/profile/blob.svg') no-repeat;
-    background-position: top -120px left -70px;
-    background-size: 159% 159%;
-    border: 1px solid rebeccapurple;
+    width: 270px;
+    height: 270px;
+    background: url('./img/blob3.svg') no-repeat;
+    background-position: top -30px left -40px;
+    background-size: 129% 129%;
 }
 
 .profile-header-container .top-container {
