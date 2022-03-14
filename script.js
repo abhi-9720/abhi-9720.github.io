@@ -8,23 +8,23 @@ const forms = document.querySelectorAll('.needs-validation');
 
 
 
-window.addEventListener("resize", function () {
+// window.addEventListener("resize", function() {
 
-    if (window.screen.width <= 700) {
-        toggleFullScreen();
-    }
-}, false);
+//     if (window.screen.width <= 700) {
+//         toggleFullScreen();
+//     }
+// }, false);
 
-function toggleFullScreen() {
+// function toggleFullScreen() {
 
-    if (!document.fullscreenElement) {
-        document.documentElement.requestFullscreen();
-    }
-}
+//     if (!document.fullscreenElement) {
+//         document.documentElement.requestFullscreen();
+//     }
+// }
 
 
 
-window.onscroll = function () {
+window.onscroll = function() {
     const top = window.scrollY;
     // console.log(top);
 
@@ -38,22 +38,19 @@ window.onscroll = function () {
 
             document.querySelector('.github-icon').style.cssText = 'color:white !important';
 
-        }
-        else {
+        } else {
             document.querySelector('.github-icon').style.cssText = 'color:black !important';
         }
 
         leftemail.style.display = "block";
-    }
-    else {
+    } else {
         leftemail.style.display = "none";
     }
 
     if (top >= homeheight) {
         header.style.display = "block";
         // console.log('I am Here block');
-    }
-    else {
+    } else {
 
         header.style.display = "none";
         // console.log('I am Here hide');
@@ -88,7 +85,7 @@ let navlinks = document.querySelectorAll('.nav-item  a')
 
 for (let i = 0; i < navlinks.length; i++) {
 
-    navlinks[i].addEventListener('click', function () {
+    navlinks[i].addEventListener('click', function() {
 
 
         document.querySelector(".navbar-collapse").classList.remove('show');
@@ -110,7 +107,7 @@ document.querySelector(".first-button").addEventListener('click', (e) => {
 const buttonRight = document.getElementById('slideRight');
 const buttonLeft = document.getElementById('slideLeft');
 
-buttonRight.onclick = function () {
+buttonRight.onclick = function() {
 
     let scroll = 600;
     if (window.screen.width <= 1000) {
@@ -123,7 +120,7 @@ buttonRight.onclick = function () {
     }
 
 };
-buttonLeft.onclick = function () {
+buttonLeft.onclick = function() {
     let scroll = 600;
     if (window.screen.width <= 1000) {
         scroll = 300;
@@ -166,7 +163,7 @@ const navLi = document.querySelectorAll("nav .container-fluid ul li")
 window.addEventListener("scroll", () => {
     let current = "";
     sections.forEach((section) => {
-        const sectionTop = section.offsetTop;// this give section top , depth of section from 0
+        const sectionTop = section.offsetTop; // this give section top , depth of section from 0
         const sectionHeight = section.clientHeight; // height of each section
 
         if (pageYOffset >= sectionTop - sectionHeight / 3) {

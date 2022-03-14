@@ -1,0 +1,7 @@
+01 Postgram is a social media platform where people can make connections by searching profiles and chat with friends. 
+
+02 Postgram is a progressive web application (PWA) that is fully responsive for mobile and website. Back-end APIs are built using node.js and socket.io for sending connection requests and a messenger where people can live chat with friends. MongoDB is used for storing user data and React.js is used for building Frontend. Along with this we can also install this web app and can be used as a Mobile application
+
+
+
+03 Postgram has all common social media functionality like sharing posts, like followings and friends post in the feed, adding new friends, following other users, and doing real-time chat with your friends. It also suggests new connections to make. User profile page where you can check your friends, followings, followers, and their all-time feed. And do pagination using infinite scroll so all posts are not loaded at once.
