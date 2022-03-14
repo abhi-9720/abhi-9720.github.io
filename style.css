@@ -1031,11 +1031,10 @@ p[data-bio]::after {
 }
 
 .projects .cards .card .details {
-    padding: 12px 0;
     line-height: 1.5;
     text-align: justify;
     color: rgba(255, 255, 255, 0.829);
-    padding: 28px 32px;
+    padding: 28px 10px;
     background-color: transparent;
 }
 
