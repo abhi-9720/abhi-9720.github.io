@@ -211,8 +211,10 @@ h1 {
     padding: 0px 0px 0px 180px;
 }
 
-* {
-    cursor: url("./img/cursor.svg") 16 16, pointer;
+@media(min-width:1000px) {
+    * {
+        cursor: url("./img/cursor.svg") 16 16, pointer;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -734,9 +736,14 @@ p[data-bio]::after {
 .experience h1 {
     color: var(--color-light);
     font-size: 50px;
-    text-decoration: underline 2px #00ce79;
-    text-underline-offset: 10px;
     margin-bottom: 60px;
+}
+
+@media(min-width:1000px) {
+    .experience h1 {
+        text-decoration: underline 2px #00ce79;
+        text-underline-offset: 10px;
+    }
 }
 
 .experience .card {
