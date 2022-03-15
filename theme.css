@@ -353,7 +353,8 @@
 /* === Resume Timeline === */
 
 #educationsection {
-    background-color: #010319;
+    /* 010319 */
+    background-color: #111827;
     padding: 40px 0px;
 }
 

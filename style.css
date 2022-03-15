@@ -82,7 +82,7 @@ html {
 
 body {
     counter-reset: section;
-    background-color: #010319;
+    background-color: #111827;
 }
 
 @media screen and (max-width: 1024px) {
@@ -255,7 +255,7 @@ h1 {
 
 .contactheadbtn {
     background-color: white !important;
-    color: #010319 !important;
+    color: #111827 !important;
     font-size: 16px !important;
 }
 
@@ -360,11 +360,13 @@ h1 {
 }
 
 main {
-    background-color: #010319 !important;
+    /* 010319 */
+    background-color: #111827 !important;
 }
 
 #aboutsection {
-    background-color: #010319;
+    /* 010319 */
+    background-color: #111827;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -504,7 +506,7 @@ p[data-bio]::after {
 }
 
 .coding_container {
-    background-color: #010319;
+    background-color: #111827;
     padding-bottom: 10vh;
 }
 
@@ -570,7 +572,7 @@ p[data-bio]::after {
 } */
 
 .expertise_container {
-    background-color: #010319 !important;
+    background-color: #111827 !important;
     padding: 30px 0px;
     display: flex;
     overflow: hidden;
@@ -706,9 +708,11 @@ p[data-bio]::after {
     }
 }
 
-#grad1 {
-    height: 200px;
-    background: linear-gradient(#010319, #111827);
+@media(min-width:1000px) {
+    #grad1 {
+        height: 100px;
+        background: linear-gradient(#111827, #111827);
+    }
 }
 
 .experience_container {
@@ -733,17 +737,10 @@ p[data-bio]::after {
     z-index: -1;
 }
 
-.experience h1 {
+.exptitle {
     color: var(--color-light);
-    font-size: 50px;
+    font-size: 4rem;
     margin-bottom: 60px;
-}
-
-@media(min-width:1000px) {
-    .experience h1 {
-        text-decoration: underline 2px #00ce79;
-        text-underline-offset: 10px;
-    }
 }
 
 .experience .card {
@@ -890,28 +887,23 @@ p[data-bio]::after {
 }
 
 .projects_container {
-    background-color: #010319 !important;
-    /* background: var(--background-secondary); */
-    background-image: url('./img/tech.svg');
-    background-repeat: repeat-y;
-    background-size: 99%;
-    background-position: 20vh 0;
+    position: relative;
+    z-index: 1000;
 }
 
-
-/* .projects_container::before {
+.projects_container::before {
     content: ' ';
-    position: fixed;
-    width: 99%;
-    height: 99%;
-    top: 0;
-    left: 0;
-    background-color: white;
-    background: url('./img/Splash-BG.svg') no-repeat center center;
-    background-size: 90%;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background: url('./img/roadmap.svg') no-repeat center center;
+    background-size: 99%;
+    background-position: 0 10vh;
     will-change: transform;
     z-index: -1;
-} */
+}
+
+#projectsection {}
 
 .projects h1 {
     /* margin-top: 100px; */
@@ -1013,7 +1005,7 @@ p[data-bio]::after {
 .projects .cards .card .thumb {
     overflow: hidden;
     max-width: 50%;
-    border-radius: 00.7em;
+    border-radius: 0.7em;
 }
 
 @media(max-width:800px) {
@@ -1483,6 +1475,11 @@ img {
 }
 
 .carousel-caption h5 {}
+
+
+/* .navbar-brand {
+    height: 16px !important;
+} */
 
 .navbar-light .navbar-nav .nav-link {
     font-size: 1rem;
