@@ -21,6 +21,7 @@
     justify-content: center;
     align-items: center;
     gap: 3px;
+    margin-top: 30px;
 }
 
 .dividersection {
@@ -834,8 +835,13 @@
 /* ---------------------------------------------- */
 
 .contact-section {
-    padding: 50px 0;
+    padding: 20px 0 30px 0;
     background-color: #111827 !important;
+    color: white;
+}
+
+.form-label {
+    color: #00e472 !important;
 }
 
 .contact-section strong {
@@ -844,7 +850,7 @@
 }
 
 .contact-form strong {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .contact-form textarea.form-control {
@@ -1095,6 +1101,7 @@
     z-index: 1000;
     width: fit-content;
     height: fit-content;
+    z-index: 1000;
 }
 
 @media(max-width:1000px) {
