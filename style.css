@@ -918,12 +918,29 @@ p[data-bio]::after {
     position: absolute;
     width: 90%;
     height: 100%;
-    background: url('./img/roadmap.svg');
+    background: url('./img/roadmap.svg') no-repeat center center;
     background-size: 99%;
     background-position: 0 10vh;
     will-change: transform;
     z-index: -1;
 }
+
+@media(max-width:1000px) {
+    .projects_container::before {
+        content: ' ';
+        position: absolute;
+        width: 90%;
+        height: 100%;
+        background-image: url('./img/roadmap.svg'), url('./img/roadmap.svg'), url('./img/roadmap.svg');
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: top 50px left 100px, center center, right bottom;
+        background-size: 90%;
+        will-change: transform;
+        z-index: -1;
+    }
+}
+
+#projectsection {}
 
 .projects h1 {
     /* margin-top: 100px; */
