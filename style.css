@@ -754,10 +754,17 @@ p[data-bio]::after {
     top: 0;
     left: 0;
     background-color: #fff;
-    background: url('./img/BG_IMG/bg2.jpg') repeat-y;
-    background-size: contain;
+    background: url('./img/BG_IMG/bg3.webp') no-repeat;
+    background-size: 100% 100%;
+    filter: hue-rotate(#003366);
     will-change: transform;
     z-index: -1;
+}
+
+@media(max-width:900px) {
+    .experience_container::before {
+        background-size: cover;
+    }
 }
 
 .exptitle {
