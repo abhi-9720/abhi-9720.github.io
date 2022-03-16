@@ -925,8 +925,6 @@ p[data-bio]::after {
     z-index: -1;
 }
 
-#projectsection {}
-
 .projects h1 {
     /* margin-top: 100px; */
     color: var(--color-light);
