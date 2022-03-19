@@ -99,7 +99,7 @@ body {
 }
 
 strong {
-    color: #fb5353;
+    color: #fa541c;
 }
 
 .markit {
@@ -845,7 +845,7 @@ p[data-bio]::after {
     content: "0"counter(section) ".";
     margin-right: 10px;
     position: relative;
-    color: #8569ff;
+    color: #0affc2;
 }
 
 .experience .card h3 {
@@ -958,6 +958,7 @@ p[data-bio]::after {
 .projects h1 {
     /* margin-top: 100px; */
     color: var(--color-light);
+    font-size: 37px;
 }
 
 .projects h5:nth-child(3) {
@@ -1019,8 +1020,8 @@ p[data-bio]::after {
 }
 
 .projects .cards .card h3 {
-    color: #8569ff;
-    font-size: 22px;
+    color: #0affc2;
+    font-size: 26px;
     text-transform: capitalize;
     margin-bottom: 0.5rem;
     font-family: inherit;
@@ -1166,6 +1167,7 @@ p[data-bio]::after {
 .grad-text {
     font-size: 44px !important;
     line-height: 68px !important;
+    font-weight: 600;
 }
 
 @media (max-width: 1024px) {
@@ -1358,7 +1360,6 @@ p[data-bio]::after {
     text-align: center;
     overflow: hidden;
     position: relative;
-    padding: 0px 30px;
 }
 
 #slideLeft {
@@ -1393,7 +1394,7 @@ p[data-bio]::after {
 .slides {
     display: flex;
     width: 100%;
-    height: 400px;
+    height: auto;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -1441,6 +1442,11 @@ img {
     border-radius: 1rem;
     display: flex;
     align-items: center;
+    /* background-color: rgba(247, 235, 235, 0.082); */
+    -webkit-backdrop-filter: blur(20px) !important;
+    backdrop-filter: blur(20px) !important;
+    box-shadow: inset 0px -1px 1px #e7ebf02c !important;
+    background-color: #ffffff41 !important;
 }
 
 .slideBody .thumb {
@@ -1451,7 +1457,6 @@ img {
     padding: 10px;
     padding-bottom: 0;
     border: 0px solid transparent;
-    background-color: inherit;
 }
 
 .slideBody .thumb img {
@@ -1486,12 +1491,17 @@ img {
 }
 
 .slides>div div.tags {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 10px;
 }
 
-.slides>div div.links a {
+.slides>div div.links a i {
     color: white;
-    margin-bottom: 20px;
+    cursor: pointer;
+    border: 1px solid rebeccapurple;
 }
 
 .socialbtns {

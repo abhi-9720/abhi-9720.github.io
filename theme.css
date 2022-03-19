@@ -45,7 +45,7 @@
 }
 
 .contact-number span,
-.contact-number spana {
+.contact-number a {
     color: white !important;
 }
 
@@ -80,7 +80,7 @@
     border: 0;
     font-weight: 700;
     background: #00e472;
-    color: #181818;
+    color: #212b36;
     cursor: pointer;
 }
 
