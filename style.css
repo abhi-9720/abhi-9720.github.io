@@ -513,7 +513,7 @@ p[data-bio]::after {
 
 .coding_container {
     background-color: #111827;
-    padding-bottom: 10vh;
+    padding: 10vh 0px;
 }
 
 .Leetcode_Stats {
@@ -534,7 +534,7 @@ p[data-bio]::after {
 
 .codingsectiontitle {
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     text-decoration: 2px underline #00ce79;
     text-underline-offset: 10px;
@@ -766,10 +766,14 @@ p[data-bio]::after {
     left: 0;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='1500' preserveAspectRatio='none' viewBox='0 0 1440 1500'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1276%26quot%3b)' fill='none'%3e%3ccircle r='116.24' cx='794.28' cy='199.84' fill='url(%23SvgjsLinearGradient1277)'%3e%3c/circle%3e%3ccircle r='142.985' cx='396.71' cy='1012.29' fill='url(%23SvgjsLinearGradient1278)'%3e%3c/circle%3e%3ccircle r='129.505' cx='739.77' cy='745.29' fill='url(%23SvgjsLinearGradient1279)'%3e%3c/circle%3e%3ccircle r='133.865' cx='1347.74' cy='717.4' fill='url(%23SvgjsLinearGradient1280)'%3e%3c/circle%3e%3ccircle r='46.67' cx='60.57' cy='149.82' fill='url(%23SvgjsLinearGradient1281)'%3e%3c/circle%3e%3ccircle r='40.825' cx='612.01' cy='387.77' fill='url(%23SvgjsLinearGradient1282)'%3e%3c/circle%3e%3ccircle r='121.345' cx='1083.83' cy='293.59' fill='url(%23SvgjsLinearGradient1283)'%3e%3c/circle%3e%3ccircle r='55.37' cx='201.2' cy='82.58' fill='url(%23SvgjsLinearGradient1284)'%3e%3c/circle%3e%3ccircle r='49.135' cx='1272.48' cy='260.12' fill='url(%23SvgjsLinearGradient1285)'%3e%3c/circle%3e%3ccircle r='88.645' cx='842.46' cy='1026.04' fill='url(%23SvgjsLinearGradient1286)'%3e%3c/circle%3e%3ccircle r='81.63' cx='280.36' cy='1352.17' fill='url(%23SvgjsLinearGradient1287)'%3e%3c/circle%3e%3ccircle r='62.595' cx='556.35' cy='853.41' fill='url(%23SvgjsLinearGradient1288)'%3e%3c/circle%3e%3ccircle r='76.15' cx='9.54' cy='579.15' fill='%2343468b'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1276'%3e%3crect width='1440' height='1500' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3clinearGradient x1='561.8' y1='199.84' x2='1026.76' y2='199.84' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1277'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23484687' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='110.73999999999995' y1='1012.29' x2='682.6800000000001' y2='1012.29' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1278'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23484687' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='480.76' y1='745.29' x2='998.78' y2='745.29' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1279'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1080.01' y1='717.4' x2='1615.47' y2='717.4' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1280'%3e%3cstop stop-color='%2384b6e0' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23464a8f' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='-32.77' y1='149.82' x2='153.91' y2='149.82' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1281'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='530.36' y1='387.77' x2='693.6600000000001' y2='387.77' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1282'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='841.1399999999999' y1='293.59' x2='1326.52' y2='293.59' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1283'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='90.46' y1='82.58' x2='311.94' y2='82.58' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1284'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23484687' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1174.21' y1='260.12' x2='1370.75' y2='260.12' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1285'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='665.1700000000001' y1='1026.04' x2='1019.75' y2='1026.04' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1286'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23484687' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='117.10000000000002' y1='1352.17' x2='443.62' y2='1352.17' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1287'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='431.16' y1='853.4100000000001' x2='681.54' y2='853.4100000000001' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1288'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23484687' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     will-change: transform;
     z-index: -1;
+    max-width: 1699px;
+    will-change: transform;
+    transform: translate3d(0%, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
 }
 
 @media(max-width:900px) {
@@ -810,7 +814,7 @@ p[data-bio]::after {
 }
 
 .timeline-body {
-    color: #d8d8d7 !important;
+    color: #f3e5f5 !important;
     font-weight: 500;
 }
 
@@ -841,6 +845,7 @@ p[data-bio]::after {
     content: "0"counter(section) ".";
     margin-right: 10px;
     position: relative;
+    color: #8569ff;
 }
 
 .experience .card h3 {
@@ -992,6 +997,7 @@ p[data-bio]::after {
     border: 1px solid transparent;
     box-shadow: none;
     background: url('./img/projectcard1.svg') no-repeat;
+    border-radius: 32px;
     background-position: top -6px left 287px;
     background-size: contain;
 }
@@ -1013,10 +1019,13 @@ p[data-bio]::after {
 }
 
 .projects .cards .card h3 {
-    color: #f7f6ff;
-    font-weight: 400;
-    font-size: 28px;
+    color: #8569ff;
+    font-size: 22px;
     text-transform: capitalize;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 @media(max-width:800px) {
@@ -1037,13 +1046,7 @@ p[data-bio]::after {
 }
 
 .projectcardcarsol {
-    padding: 15px;
-    background-color: #31373c !important;
-    border: 3px solid #49525d;
-    background-color: #262932;
-    -webkit-box-shadow: 1px 1px 2px 1px rgb(29 28 28 / 8%);
-    box-shadow: 1px 1px 2px 1px rgb(29 28 28 / 8%);
-    border-radius: 00.7em;
+    border-radius: 0.7em;
     height: fit-content;
 }
 
@@ -1082,7 +1085,7 @@ p[data-bio]::after {
 .projects .cards .card .details {
     line-height: 1.5;
     text-align: justify;
-    color: rgba(255, 255, 255, 0.829);
+    color: #ffffff;
     padding: 28px 10px;
     background-color: transparent;
 }
@@ -1125,12 +1128,12 @@ p[data-bio]::after {
 .projects .cards .card .tags span {
     display: inline-block;
     border-radius: 8px;
-    padding: 2px 8px;
+    padding: 2px 4px;
     white-space: nowrap;
-    background-color: #f0f7ff;
+    background-color: #cbe3fc;
     border: 1px solid #e0e3e7;
     color: #0072e5;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 #vantajs {
@@ -1351,10 +1354,11 @@ p[data-bio]::after {
 
 .slider {
     width: 100%;
-    height: 400px;
+    height: 360px;
     text-align: center;
     overflow: hidden;
     position: relative;
+    padding: 0px 30px;
 }
 
 #slideLeft {
@@ -1410,8 +1414,8 @@ p[data-bio]::after {
     align-items: center;
     flex-direction: column;
     user-select: none;
-    background-color: #32363e;
-    border: 3px solid #49525d;
+    /* background-color: #32363e; */
+    /* border: 3px solid #49525d; */
     /* background-color: #476ce4; */
     color: #fff;
     border-radius: 15px;

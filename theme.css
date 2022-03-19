@@ -486,6 +486,7 @@
 
 .timeline-content {
     padding: 5px 20px 0 20px;
+    border-bottom: 5px solid #ff1943;
 }
 
 .timeline>li .timeline-panel:before {
@@ -603,12 +604,12 @@
         transition: all 400ms;
     }
     .timeline>li .timeline-panel:hover::before {
-        border-left: 12px solid #d8d8d7;
+        /* border-left: 12px solid #d8d8d7; */
     }
     .timeline>li.timeline-inverted .timeline-panel::before {
         right: 100%;
         /* border-right: 12px solid #ECECEC; */
-        border-right: 12px solid #49525d;
+        border-right: 12px solid #212b36;
         -webkit-transition: all 400ms;
         -moz-transition: all 400ms;
         -o-transition: all 400ms;
@@ -616,7 +617,7 @@
         margin-right: -5px
     }
     .timeline>li.timeline-inverted .timeline-panel:hover::before {
-        border-right: 12px solid #d8d8d7;
+        /* border-right: 12px solid #d8d8d7; */
         border-left: 0;
         margin-right: -5px
     }
@@ -631,26 +632,26 @@
     .timeline>li .timeline-panel::after {
         left: 100%;
         margin-left: -2px;
-        border-left: 12px solid #49525d;
+        border-left: 12px solid #212b36;
         -webkit-transition: all 400ms;
         -moz-transition: all 400ms;
         -o-transition: all 400ms;
         transition: all 400ms;
     }
     .timeline>li .timeline-panel:hover::after {
-        border-left: 12px solid #d8d8d7;
+        /* border-left: 12px solid #d8d8d7; */
     }
     .timeline>li.timeline-inverted .timeline-panel::after {
         right: 100%;
         margin-right: -2px;
-        border-left: 12px solid #49525d !;
+        border-left: 12px solid #212b36 !;
         -webkit-transition: all 400ms;
         -moz-transition: all 400ms;
         -o-transition: all 400ms;
         transition: all 400ms;
     }
     .timeline>li.timeline-inverted .timeline-panel:hover::after {
-        border-right: 12px solid #d8d8d7;
+        /* border-right: 12px solid #d8d8d7; */
         border-left: 0;
     }
     .timeline>li .posted-date {
@@ -664,23 +665,25 @@
     }
 }
 
+.panel-heading i {
+    color: #57ca22 !important;
+}
+
 .timeline-content {
     position: relative;
     padding: 24px;
-    background-color: #32363e;
-    border: 3px solid #49525d;
+    background-color: #212b36;
+    box-shadow: rgb(0 0 0 / 20%) 0px 0rem 14rem 0px, rgb(0 0 0 / 3%) 0px 0.8rem 2.3rem, rgb(0 0 0 / 15%) 0px 0.2rem;
     -webkit-transition: all 400ms;
-    -moz-transition: all 400ms;
     -o-transition: all 400ms;
     transition: all 400ms;
     border-radius: 0.7em;
     margin-left: 5px;
     margin-top: 4px;
+    box-shadow: rgb(106 113 153) 0px 0px 2px;
 }
 
-.timeline-content:hover {
-    border: 3px solid #d8d8d7;
-}
+.timeline-content:hover {}
 
 
 /* ---------------------------------------------- /*
