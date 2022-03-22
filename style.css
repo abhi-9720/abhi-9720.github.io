@@ -594,6 +594,11 @@ p[data-bio]::after {
     background-color: #111827;
     padding: 80px 0;
 }
+@media(max-width:900px){
+    .coding_container{
+        padding-top: 0px;
+    }
+}
 
 .Leetcode_Stats {
     position: relative;
@@ -864,9 +869,15 @@ p[data-bio]::after {
 .exptitle {
     color: var(--color-light);
     font-size: 3rem;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
+@media(max-width:900px){
+    .exptitle{
+        text-align: left;
+    }
+}
 .experience .card {
     /* margin-top: 48px; */
     margin-left: 20px;

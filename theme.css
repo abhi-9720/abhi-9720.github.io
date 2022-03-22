@@ -401,8 +401,14 @@
 
 .resume-title {
     margin-bottom: 30px;
+    color: white;    
 }
-
+@media(max-width:900px){
+    .resume-title {
+        margin-bottom: 30px;
+        margin-top: 29px;
+    }
+}
 .timeline {
     position: relative;
     padding: 0;
