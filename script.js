@@ -1,5 +1,5 @@
 // add class navbarDark on navbar scroll
-const header = document.querySelector('.navbar');
+const header = document.querySelector('#navbar');
 const leftemail = document.querySelector('.leftfixed p')
 const forms = document.querySelectorAll('.needs-validation');
 
@@ -23,39 +23,19 @@ const forms = document.querySelectorAll('.needs-validation');
 // }
 
 
+window.addEventListener('scroll', () => {
 
-window.onscroll = function() {
     const top = window.scrollY;
     // console.log(top);
-
     const homeheight = parseInt(document.getElementById('home').clientHeight);
-    // console.log("about height " + document.getElementById('aboutsection').clientHeight);
-    // console.log("start of top" + document.getElementById('aboutsection').offsetTop);
 
-    if (top >= 280 && top <= 9022.7021484375) {
-        if (top >= 3100) {
-
-
-            document.querySelector('.github-icon').style.cssText = 'color:white !important';
-
-        } else {
-            document.querySelector('.github-icon').style.cssText = 'color:black !important';
-        }
-
-        leftemail.style.display = "block";
-    } else {
-        leftemail.style.display = "none";
-    }
 
     if (top >= homeheight) {
         header.style.display = "block";
-        // console.log('I am Here block');
     } else {
-
         header.style.display = "none";
-        // console.log('I am Here hide');
     }
-}
+})
 
 
 
@@ -85,7 +65,7 @@ let navlinks = document.querySelectorAll('.nav-item  a')
 
 for (let i = 0; i < navlinks.length; i++) {
 
-    navlinks[i].addEventListener('click', function() {
+    navlinks[i].addEventListener('click', function () {
 
 
         document.querySelector(".navbar-collapse").classList.remove('show');
@@ -107,7 +87,7 @@ document.querySelector(".first-button").addEventListener('click', (e) => {
 const buttonRight = document.getElementById('slideRight');
 const buttonLeft = document.getElementById('slideLeft');
 
-buttonRight.onclick = function() {
+buttonRight.onclick = function () {
 
     let scroll = 600;
     if (window.screen.width <= 1000) {
@@ -120,7 +100,7 @@ buttonRight.onclick = function() {
     }
 
 };
-buttonLeft.onclick = function() {
+buttonLeft.onclick = function () {
     let scroll = 600;
     if (window.screen.width <= 1000) {
         scroll = 300;
@@ -186,7 +166,7 @@ window.addEventListener("scroll", () => {
 
 var lastScrollTop;
 navbar = document.getElementById('navbar');
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
         navbar.style.top = '-80px';
