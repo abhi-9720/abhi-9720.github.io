@@ -95,7 +95,6 @@ html {
 
 #progressbar{
     z-index: 100000;
-
     position: fixed;
     top: 0;
     right: 0;
@@ -137,6 +136,21 @@ html {
     height: 100%;
     background: linear-gradient(to top,#008aff,#00ffe7);
     filter:blur(30px)
+}
+@media(max-width:800px){
+
+    #scrollPath{
+        z-index: 100000;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 4px;
+    }
+
+    #progressbar{
+     
+        width: 4px;
+    }
 }
 ::-webkit-scrollbar-thumb {
     background: #aaa;
