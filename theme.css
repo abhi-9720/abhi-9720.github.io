@@ -419,12 +419,16 @@
     position: relative;
 }
 
-@media (max-width: 766px) {
+
     .timeline-heading h3.panel-title {
-        font-size: 14px;
+        font-size: 17px;
         line-height: normal;
+        color: rgb(45 248 197/1)!important;
     }
-}
+    .standard{
+        color: white;
+    }
+
 
 .resume:before {
     content: "";
@@ -677,8 +681,10 @@
 
 .timeline-content {
     position: relative;
-    padding: 24px;
-    background-color: #212b36;
+    padding: 20px;
+    padding-bottom: 5px;
+    /* background-color: #212b36; */
+    background-color: rgb(0 66 70/1)!important;
     box-shadow: rgb(0 0 0 / 20%) 0px 0rem 14rem 0px, rgb(0 0 0 / 3%) 0px 0.8rem 2.3rem, rgb(0 0 0 / 15%) 0px 0.2rem;
     -webkit-transition: all 400ms;
     -o-transition: all 400ms;
@@ -688,6 +694,8 @@
     margin-top: 4px;
     box-shadow: rgb(106 113 153) 0px 0px 2px;
 }
+
+
 
 .timeline-content:hover {}
 

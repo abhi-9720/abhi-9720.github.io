@@ -357,15 +357,8 @@
         margin-right: 0;
     }
     /* .timeline-heading */
-    .timeline-heading h3.panel-title {
-        font-size: 14px;
-        line-height: normal;
-    }
-    .timeline-heading span {
-        font-size: 12px;
-        font-weight: 600;
-        line-height: 12px;
-    }
+    
+   
     .timeline-heading span a.h4 {
         font-size: 14px;
         line-height: 20px;

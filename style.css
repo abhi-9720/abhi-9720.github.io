@@ -904,8 +904,9 @@ p[data-bio]::after {
 }
 
 .timeline-body {
-    color: #f3e5f5 !important;
-    font-weight: 500;
+    color: rgb(185 207 202/1)!important;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .experience .card:hover {
@@ -1253,10 +1254,17 @@ p[data-bio]::after {
     border-radius: 8px;
     padding: 2px 4px;
     white-space: nowrap;
-    background-color: #cbe3fc;
-    border: 1px solid #e0e3e7;
-    color: #0072e5;
-    font-weight: 600;
+    background-color: #48eda8;    
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 900 !important;
+    padding: 0 12px;
+    height: max-content;
+    line-height: 28px;
+    letter-spacing: 1px;
+    display: inline-flex;
+    border-radius: 14px;
 }
 
 #vantajs {
@@ -1519,12 +1527,13 @@ p[data-bio]::after {
 
 .slides {
     display: flex;
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    height: 100% !important;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     gap: 20px;
+    
 }
 
 .slides>div {
@@ -1588,11 +1597,15 @@ img {
 .slideBody .thumb img {
     height: 280px;
     width: 100%;
-    background-size: cover;
-    object-fit: cover;
-    flex: 1 0 auto;
+    background-size: cover;        
     border-radius: 20px;
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+    transition: all 400ms ease-in-out;
+}
+.slideBody .thumb img:hover{
+    transform: scale(1.07);
+    transition: all 0.3s ease-in-out;
+    display: none;
 }
 
 .slider>a {
@@ -1650,7 +1663,7 @@ img {
     height: 0px;
 }
 
-@media(max-width:900px) {
+@media(max-width:700px) {
     .slideBody .thumb img {
         background-size: contain;
         border-radius: 10px;
