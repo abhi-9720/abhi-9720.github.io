@@ -94,8 +94,10 @@ buttonRight.onclick = function () {
         scroll = 300;
     }
 
+
     document.querySelector('.slides').scrollLeft += scroll;
-    if (document.querySelector('.slides').scrollLeft > scroll * 2) {
+
+    if (document.querySelector('.slides').scrollLeft > scroll * 1.5) {
         document.querySelector('.slides').scrollLeft = 0;
     }
 
