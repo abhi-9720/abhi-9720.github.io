@@ -1018,7 +1018,7 @@ p[data-bio]::after {
     
 }
 .codingNinjas:before{
-    content: url('./img/codingninjas (1).svg');            
+    content: url('./img/codingninjas.svg');            
 }
 .encomece{
     content: url('./img/encomece.png');
