@@ -6,11 +6,6 @@
             "src": "./img/manifestimg/maskable_icon_x384round.png",
             "sizes": "325x325",
             "type": "image/png"
-        },
-        {
-            "src": "./img/manifestimg/maskable_icon_x384.png",
-            "sizes": "384x384",
-            "type": "image/png"
         }
     ],
     "start_url": "/",
