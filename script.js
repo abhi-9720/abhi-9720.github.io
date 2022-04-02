@@ -54,9 +54,25 @@ function reveal() {
             reveals[i].classList.remove("active");
         }
     }
+
+    var horiReveals = document.querySelectorAll(".horiReveal");
+
+    for (var i = 0; i < horiReveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = horiReveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+            horiReveals[i].classList.add("active");
+
+        } else {
+            horiReveals[i].classList.remove("active");
+        }
+    }
 }
 
 window.addEventListener("scroll", reveal);
+
 
 
 
@@ -108,10 +124,6 @@ buttonLeft.onclick = function () {
         scroll = 300;
     }
     document.querySelector('.slides').scrollLeft -= scroll;
-
-
-
-
 };
 
 

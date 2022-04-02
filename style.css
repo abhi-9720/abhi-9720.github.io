@@ -93,6 +93,27 @@ html {
 
 }
 
+
+
+.horiReveal{
+    position: relative;
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.horiReveal:nth-child(even){
+
+    position: relative;
+    transform: translateX(200px);
+    opacity: 0;
+    transition: 1s all ease-in;
+}
+.horiReveal.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
 #progressbar{
     z-index: 100000;
     position: fixed;
@@ -886,6 +907,11 @@ p[data-bio]::after {
     -webkit-transform: translate3d(0, 0, 1px);
     -webkit-backface-visibility: hidden;
     background-color: #004246;
+    border-radius: 0 0 80px 80px ;
+    padding-bottom: 80px;
+    margin: 0px 30px;
+    
+    margin-bottom: 100px;
 }
 
 .experience_container::before {
