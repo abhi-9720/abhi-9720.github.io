@@ -885,7 +885,7 @@ p[data-bio]::after {
     overflow: hidden;
     -webkit-transform: translate3d(0, 0, 1px);
     -webkit-backface-visibility: hidden;
-    background-color: inherit;
+    background-color: #004246;
 }
 
 .experience_container::before {
@@ -935,7 +935,10 @@ p[data-bio]::after {
 
     color: #fff;
     
-    background :linear-gradient(to left, #1b1f230a 50%, #040d21 50%) right;
+    background :linear-gradient(to left,  #013437 50%, #004246 50%) right;
+
+    
+
     /* 00171f */
      background-size: 200%;
     transition: all 0.5s ease-out;
@@ -943,7 +946,7 @@ p[data-bio]::after {
 
     transition: all .4s;
     border: 2px solid transparent;
-
+    border: none;
     border-bottom: 2px solid #00ffe7;
     
     
@@ -969,7 +972,7 @@ p[data-bio]::after {
     /* border-left: 5px crimson solid;
     border-radius: 0px;
      */
-    border: 2px solid #00ffe7;
+     border-bottom: 2px solid transparent;
 
      background-position: left;
     
@@ -1063,8 +1066,9 @@ p[data-bio]::after {
 
 .experience .card .description p {
     text-align: justify;
-    color: #fff;
-    font-weight: 100 !important;
+    
+    color:#f2fbf7;
+    
     font-size: 1.0625rem;
 }
 
@@ -1183,7 +1187,7 @@ p[data-bio]::after {
     border: 1px solid transparent;
     box-shadow: none;
     background: url('./img/projectcard1.svg') no-repeat;
-    border-radius: 32px;
+    /* border-radius: 32px; */
     background-position: top -6px left 287px;
     background-size: contain;
 }
@@ -1660,6 +1664,7 @@ img {
     -webkit-backdrop-filter: blur(20px) !important;
     backdrop-filter: blur(20px) !important;
     /* background-color: #ffffff41 !important; */
+    padding: 10px;
 }
 .carousel{
     box-shadow: none;
