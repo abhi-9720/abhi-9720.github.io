@@ -3,12 +3,18 @@
     "short_name": "Abhishek Tiwari",
     "icons": [
         {
-            "src": "./img/manifestimg/maskable_icon_x384round.png",
-            "sizes": "325x325",
+            "src": "./img/manifestimg/maskable_icon_x391_round.png",
+            "sizes": "391x391",
             "type": "image/png"
+        },
+        {
+            "src": "./img/manifestimg/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
         }
     ],
-    "start_url": "/",
+    "start_url": "/index.html",
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "standalone"
