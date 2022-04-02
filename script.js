@@ -55,20 +55,20 @@ function reveal() {
         }
     }
 
-    var horiReveals = document.querySelectorAll(".horiReveal");
+    // var horiReveals = document.querySelectorAll(".horiReveal");
 
-    for (var i = 0; i < horiReveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = horiReveals[i].getBoundingClientRect().top;
-        var elementVisible = 150;
+    // for (var i = 0; i < horiReveals.length; i++) {
+    //     var windowHeight = window.innerHeight;
+    //     var elementTop = horiReveals[i].getBoundingClientRect().top;
+    //     var elementVisible = 150;
 
-        if (elementTop < windowHeight - elementVisible) {
-            horiReveals[i].classList.add("active");
+    //     if (elementTop < windowHeight - elementVisible) {
+    //         horiReveals[i].classList.add("active");
 
-        } else {
-            horiReveals[i].classList.remove("active");
-        }
-    }
+    //     } else {
+    //         horiReveals[i].classList.remove("active");
+    //     }
+    // }
 }
 
 window.addEventListener("scroll", reveal);
