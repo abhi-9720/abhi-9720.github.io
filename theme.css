@@ -383,7 +383,7 @@
     margin-top: 40px;
     padding: 0px 0px 40px 0;
     background-color: #004246 !important;
-    background-image: url('https://img.freepik.com/free-vector/college-building-educational-institution-banner_1441-3616.jpg?w=1380&t=st=1648927762~exp=1648928362~hmac=26f2a56a4d1eb8864a1574de8bf53db52ef5a7eb83b6f40392e5c56d45872228');
+    background-image: url('./img/BG_IMG/college-banner.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -746,7 +746,8 @@
     border-radius: 0.7em;
     margin-left: 5px;
     margin-top: 4px;
-    /* box-shadow: rgb(106 113 153) 0px 0px 2px; */
+
+    box-shadow: rgb(106 113 153) 0px 0px 2px;
 }
 
 

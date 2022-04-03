@@ -537,19 +537,21 @@ main {
 }
 
 
-/* #aboutsection::before {
-    content: ' ';
-    position: fixed;
-    width: 99%;
-    height: 99%;
-    top: 0;
-    left: 0;
-    background: url('./img/projectcard.svg'), url('./img/blob3.svg');
-    background-repeat: no-repeat, no-repeat;
-    background-size: 386px auto, 320px auto;
-    background-position: top -30px left -170px, bottom -50px right -20px;
-    will-change: transform;
+
+/* .projects::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    left: 00%;
+    top: -5%;
     z-index: -1;
+    background: url('./img/BG_IMG/softwareillustr.webp') no-repeat;
+
+    border: 1px solid white;
+
+
+
 } */
 
 .aboutprofile {
@@ -681,7 +683,19 @@ p[data-bio]::after {
 
 .coding_container {
     background-color: #111827;
-    padding: 80px 0;
+
+    box-sizing: content-box;
+    padding: 70px 0 80px 0;
+    overflow-y: scroll;
+    /* height: 80%;
+    /* background-image: url('https://img.freepik.com/free-vector/organic-flat-design-gamer-room_52683-60824.jpg?w=1060&t=st=1648969051~exp=1648969651~hmac=ef15df599d0ba599faee7a601d4d6a50f7caab75b71282d17a86d709d95efdee'); */
+
+    /*    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; */
+
+
 }
 
 @media(max-width:900px) {
@@ -990,7 +1004,7 @@ p[data-bio]::after {
 
     color: #fff;
 
-    background: url('https://img.freepik.com/free-vector/stylish-glowing-digital-red-lines-banner_1017-23964.jpg?t=st=1648926088~exp=1648926688~hmac=86147ddd0029f3e34c12f551f2b53390fdb13a26a1fbb2774d3b709b05685efd&w=1380');
+    background: url('./img/BG_IMG/lines-banner_1017-23964.webp');
 
     background-size: 160%;
 
@@ -1056,6 +1070,7 @@ p[data-bio]::after {
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
 
 .projects h5 {
     color: var(--color-calendar-halloween-graph-day-L3-bg);
