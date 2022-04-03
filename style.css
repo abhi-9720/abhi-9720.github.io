@@ -992,29 +992,24 @@ p[data-bio]::after {
 
     background: url('https://img.freepik.com/free-vector/stylish-glowing-digital-red-lines-banner_1017-23964.jpg?t=st=1648926088~exp=1648926688~hmac=86147ddd0029f3e34c12f551f2b53390fdb13a26a1fbb2774d3b709b05685efd&w=1380');
 
-
-
-
-    /* 00171f */
     background-size: 160%;
 
     transition: all 0.8s ease-out;
-
-
-
     border: none;
-
-
-
     margin-bottom: 15px;
     display: flex;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     max-width: 900px;
-
     /* border-radius: 16px; */
     z-index: 100;
+}
+
+@media(max-width:1000px) {
+    .experience .card {
+        background-size: cover;
+    }
 }
 
 .timeline-body {
