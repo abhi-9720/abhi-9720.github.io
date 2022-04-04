@@ -1026,7 +1026,7 @@ p[data-bio]::after {
 
     background: url('./img/BG_IMG/lines-banner_1017-23964.webp');
 
-    background-size: 160%;
+    background-size: 140%;
 
     transition: all 0.8s ease-out;
     border: none;
@@ -1043,6 +1043,7 @@ p[data-bio]::after {
 @media(max-width:1000px) {
     .experience .card {
         background-size: cover;
+
     }
 }
 
@@ -1054,34 +1055,7 @@ p[data-bio]::after {
 }
 
 .experience .card:hover {
-    /* border-left: 5px crimson solid;
-    border-radius: 0px;
-     */
-
-
     background-position: bottom right;
-
-    /* border: 10px solid;
-  border-image-slice: 1;
-  border-width: 5px;
-    
-     border-image-source: 1px solid violet;
-    border-image: linear-gradient(
-      to left,
-      #ff5770,
-      #e4428d,
-      #c42da8,
-      #9e16c3,
-      #6501de,
-      #9e16c3,
-      #c42da8,
-      #e4428d,
-      #ff5770
-    ); */
-
-
-
-
 }
 
 
