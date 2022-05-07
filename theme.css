@@ -53,7 +53,7 @@
     -webkit-backdrop-filter: blur(20px) !important;
     backdrop-filter: blur(20px) !important;
     box-shadow: inset 0px -1px 1px #e7ebf02c !important;
-    background-color: #ffffff00 !important;
+    background-color: rgba(17, 24, 39, 1) !important;
     padding: 10px 20px;
     border-radius: 20px;
 }
@@ -380,7 +380,7 @@
 /* === Resume Timeline === */
 
 #educationsection {
-    margin-top: 40px;
+
     padding: 0px 0px 40px 0;
     background-color: #004246 !important;
     background-image: url('./img/BG_IMG/college-banner.webp');

@@ -522,12 +522,12 @@ h1 {
 
 main {
     /* 010319 */
-    background-color: #111827 !important;
+    background-color: #1f2937 !important;
 }
 
 #aboutsection {
     /* 010319 */
-    background-color: #111827;
+    background-color: #1f2937;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -686,15 +686,16 @@ p[data-bio]::after {
     background-color: #111827;
 
     box-sizing: content-box;
-    padding: 70px 0 80px 0;
+    padding: 70px 0 100px 0;
     overflow-y: scroll;
-    /* height: 80%;
-    /* background-image: url('https://img.freepik.com/free-vector/organic-flat-design-gamer-room_52683-60824.jpg?w=1060&t=st=1648969051~exp=1648969651~hmac=ef15df599d0ba599faee7a601d4d6a50f7caab75b71282d17a86d709d95efdee'); */
 
-    /*    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center; */
+    background-image: url('./img/78255-background-looping-animation.gif');
+
+
+
+
+
+    background-position: 0 0;
 
 
 }
@@ -786,14 +787,13 @@ p[data-bio]::after {
 } */
 
 .expertise_container {
-    background-color: #111827 !important;
-    /* padding: 30px 0px; */
+
+    padding: 30px 0px 50px 0;
     display: flex;
     overflow: hidden;
     position: relative;
     border-left: 0.3em solid #00ce79;
-    -webkit-transition: background-image 0.2s ease-in-out;
-    transition: background-image 0.2s ease-in-out;
+
 }
 
 .expertise_container .container-fluid:before {
@@ -1342,7 +1342,7 @@ p[data-bio]::after {
     line-height: 1.5;
 
     text-align: justify;
-    color: #FDFFFC;
+    color: #adbac7;
     padding: 28px 10px;
     background-color: transparent;
 }
@@ -1873,11 +1873,12 @@ img {
     }
 }
 
+
 @media(min-width:1000px) {
     .nav-item :hover {
-        color: #4466f2 !important;
-        background-color: #f7f6ff !important;
+        background-color: #00e47237 !important;
         border-radius: 10px;
+
     }
 }
 
@@ -2066,7 +2067,7 @@ img {
     -webkit-backdrop-filter: blur(20px) !important;
     backdrop-filter: blur(20px) !important;
     box-shadow: inset 0px -1px 1px #e7ebf0 !important;
-    background-color: #FDFFFC7c !important;
+    background-color: rgba(17, 24, 39, 1) !important;
 }
 
 .navsocialbtns {
@@ -2102,7 +2103,7 @@ img {
         backdrop-filter: blur(10px);
         transition: all .4s ease;
         margin-top: 0;
-        background-color: #1118276e !important;
+        /* background-color: rgba(17, 24, 39, 1) !important; */
         /* box-shadow: none !important; */
         z-index: 2;
         /* backdrop-filter: blur(10px) saturate(125%); */
@@ -2126,18 +2127,16 @@ img {
         height: 98vh;
     }
 
-    .navbar-light .navbar-nav .nav-link {
-        color: #fff !important;
-    }
+
 
     .navbar>.container-fluid {
         justify-content: flex-end !important;
     }
 
-    .navbar-light .navbar-nav .nav-item.active a {
-        color: #4466f2 !important;
-    }
+
 }
+
+
 
 #scroll-progress {
     position: fixed;
@@ -2158,20 +2157,24 @@ nav .container-fluid ul li {
     border-radius: 10px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    margin: 0px 15px;
 }
 
 nav .container-fluid ul li.active {
-    background-color: #fff !important;
+    background-color: #00e47237 !important;
+
 }
 
 nav .container-fluid ul li a {
     /* color: #4466f2 !important; */
 }
 
-nav .container-fluid ul li.active a {
-    color: #4466f2 !important;
-}
+
 
 .form-outline .form-control {
     color: #fff !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #00e472 !important;
 }
