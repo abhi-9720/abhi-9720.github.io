@@ -629,11 +629,13 @@ p[data-bio]::after {
 
 
 .profile-header-container {
-    width: 270px;
-    height: 270px;
+    width: 304px;
+    height: 305px;
+    border-radius: 50%;
     background: url('./img/blob3.svg') no-repeat;
     background-position: top -50px left -40px;
     background-size: 129% 129%;
+
 }
 
 .profile-header-container .top-container {
@@ -645,8 +647,8 @@ p[data-bio]::after {
 }
 
 .profile-header-container .top-container .profile-image {
-    width: 220px;
-    height: 220px;
+    width: 304px;
+    height: 305px;
     border-radius: 50%;
 }
 
