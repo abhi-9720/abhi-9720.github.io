@@ -114,7 +114,7 @@
 #home {
     cursor: -webkit-grab;
     cursor: grab;
-    background-color: #111827;
+    background-color: #0b0e17;
 }
 
 
@@ -389,6 +389,8 @@
     background-attachment: fixed;
     background-position: center;
     border-radius: 80px;
+    width: 85%;
+    margin: 0 auto;
 
 
 
@@ -418,6 +420,14 @@
         margin-bottom: 30px;
         margin-top: 29px;
     }
+
+    #educationsection {
+        width: 100%;
+
+
+    }
+
+
 }
 
 .timeline {

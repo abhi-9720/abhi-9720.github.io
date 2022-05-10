@@ -522,37 +522,46 @@ h1 {
 
 main {
     /* 010319 */
-    background-color: #1f2937 !important;
+    background-color: #0b0e17 !important;
 }
 
 #aboutsection {
     /* 010319 */
-    background-color: #1f2937;
+    background-color: #0b0e17;
     display: flex;
     justify-content: center;
     align-items: center;
     border-left: 0.3em solid #00ce79;
     /* font-family: "Nunito", Helvetica, Arial, sans-serif; */
     font-family: "Google Sans" !important;
+
+}
+
+#home {
+    background-color: #0b0e17;
+    background-size: 99vw 100vh !important;
+
+    /* background: url('./img/BG_IMG/sebastian-svenson-d2w-_1LJioQ-unsplash.jpg') no-repeat; */
+    background: url('./img/BG_IMG/andras-vas-Bd7gNnWJBkU-unsplash.jpg') no-repeat;
+
 }
 
 
 
-/* .projects::before {
-    content: "";
-    position: absolute;
-    width: 120%;
-    height: 120%;
-    left: 00%;
-    top: -5%;
-    z-index: -1;
-    background: url('./img/BG_IMG/softwareillustr.webp') no-repeat;
+.projects_container {
+    background-color: #0b0e17;
+    background-size: 100vw 74%;
+    background-image: url('./img/BG_IMG/uriel-soberanes-MxVkWPiJALs-unsplash.jpg');
+    background-repeat: no-repeat;
+}
 
-    border: 1px solid white;
-
-
-
-} */
+.slider {
+    width: 100%;
+    background-color: #0b0e17;
+    background-size: 100vw 255vh;
+    background-image: url('./img/BG_IMG/maximalfocus-HakTxidk36I-unsplash.jpg   ');
+    background-repeat: no-repeat;
+}
 
 .aboutprofile {
     display: flex;
@@ -1024,9 +1033,9 @@ p[data-bio]::after {
     padding: 24px;
 
     color: #fff;
-
-    background: url('./img/5078151.jpg') no-repeat;
     /* https://img.freepik.com/free-vector/quantum-computer-large-data-processing-database-concept-cpu-isometric-banner-central-computer-processors_74231-1124.jpg?size=626&ext=jpg */
+    background: url('./img/BG_IMG/wesson-wang-y0_vFxOHayg-unsplash.jpg') no-repeat;
+
 
     background-size: cover;
     background-position: center;
@@ -1080,7 +1089,7 @@ p[data-bio]::after {
 
 .projects .card h3::before {
     counter-increment: section 1;
-    content: "0"counter(section) ".";
+    content: "0" counter(section) ".";
     margin-right: 10px;
     position: relative;
     color: #0affc2;
@@ -1181,33 +1190,9 @@ p[data-bio]::after {
     z-index: 1000;
 }
 
-.projects_container::before {
-    content: ' ';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url('./img/roadmap.svg') no-repeat center center;
-    background-size: 99%;
-    background-position: 0 10vh;
-    will-change: transform;
-    z-index: -1;
-}
 
-@media(max-width:1000px) {
-    .projects_container::before {
-        content: ' ';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        /* top: 30px; */
-        background-image: url('./img/roadmap.svg'), url('./img/roadmap.svg');
-        background-repeat: no-repeat, no-repeat;
-        background-position: top, bottom;
-        background-size: cover, cover;
-        will-change: transform;
-        z-index: -1;
-    }
-}
+
+
 
 
 
@@ -1244,20 +1229,44 @@ p[data-bio]::after {
     /* background: var(--background-primary); */
     transition: all .4s;
     background-color: transparent;
-    /* background-image: linear-gradient(147deg, #000000 0%, #2d3748 74%); */
+    -webkit-backdrop-filter: blur(20px) !important;
+    backdrop-filter: blur(20px) !important;
+
     padding: 10px 20px 20px 20px;
     margin-bottom: 30px;
     border: 1px solid transparent;
+    border-bottom-width: 3px;
     box-shadow: none;
-    background: url('./img/projectcard1.svg') no-repeat;
-    /* border-radius: 32px; */
+
+
     background-position: top -6px left 287px;
     background-size: contain;
+
+
+
+    padding: 20px 35px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+
+    transition: all 0.3s ease-out 0s
 }
+
+.projects .cards .card:hover {
+
+    border-color: #2F80ED;
+    box-shadow: 0px 8px 25px rgba(47, 128, 237, 0.35);
+}
+
 
 @media(max-width:700px) {
     .projects .cards .card {
         padding: 3px;
+    }
+
+    .projects .cards .card {
+
+        border-color: #2F80ED;
+        box-shadow: 0px 8px 25px rgba(47, 128, 237, 0.35);
     }
 }
 
@@ -1279,7 +1288,8 @@ p[data-bio]::after {
     font-family: inherit;
     margin-left: 10px;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 3rem;
+
 }
 
 @media(max-width:800px) {
@@ -1342,7 +1352,7 @@ p[data-bio]::after {
     line-height: 1.5;
 
     text-align: justify;
-    color: #adbac7;
+    color: #c5dce7 !important;
     padding: 28px 10px;
     background-color: transparent;
 }
@@ -1358,13 +1368,13 @@ p[data-bio]::after {
 }
 
 .projects .cards .card .links a {
-    color: #999a9e;
+    color: #1de9b6;
     font-size: 20px;
     transition: transform 0.2s;
 }
 
 .projects .cards .card .links a i {
-    -webkit-text-stroke: 0.01px #c1d3fe !important;
+    -webkit-text-stroke: 0.01px #1de9b6 !important;
 }
 
 .projects .cards .card .links a:hover {
@@ -1386,7 +1396,6 @@ p[data-bio]::after {
 
     box-shadow: rgb(0 0 0 / 5%) 0 0 0 1px, rgb(0 0 0 / 12%) 0 15px 30px 0;
     z-index: 999999;
-
     white-space: nowrap;
     background-color: #48eda8;
     color: #f0dcca;
@@ -1400,7 +1409,7 @@ p[data-bio]::after {
     display: inline-flex;
     border-radius: 14px;
     font-weight: 700;
-    background: linear-gradient(to left, #6f9283 50%, #18d39e36 50%) right;
+    background: #18d39e36;
     background-size: 200%;
     transition: all 0.5s ease-out;
 }
@@ -1409,7 +1418,6 @@ p[data-bio]::after {
     background-position: left;
     color: #18d39e;
     font-size: 15px;
-
 }
 
 #vantajs {
@@ -1876,7 +1884,7 @@ img {
 
 @media(min-width:1000px) {
     .nav-item :hover {
-        background-color: #00e47237 !important;
+        background-color: #39c0ed46 !important;
         border-radius: 10px;
 
     }
@@ -2161,7 +2169,7 @@ nav .container-fluid ul li {
 }
 
 nav .container-fluid ul li.active {
-    background-color: #00e47237 !important;
+    background-color: #39c0ed46 !important;
 
 }
 
@@ -2176,5 +2184,5 @@ nav .container-fluid ul li a {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #00e472 !important;
+    color: #39c0ed !important;
 }
