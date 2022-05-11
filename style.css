@@ -1006,7 +1006,7 @@ p[data-bio]::after {
 
 .exptitle {
     font-size: 3rem;
-    color: #FDFFFC;
+    color: #fff;
     text-decoration: 2px underline #00e472;
     text-underline-offset: 10px;
     display: flex;
@@ -1039,8 +1039,9 @@ p[data-bio]::after {
     background: url('./img/BG_IMG/wesson-wang-y0_vFxOHayg-unsplash.jpg') no-repeat;
 
 
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
+
     transition: all 0.8s ease-out;
     border: none;
     margin-bottom: 15px;
@@ -1049,8 +1050,12 @@ p[data-bio]::after {
     -ms-flex-direction: column;
     flex-direction: column;
     max-width: 900px;
+    transform: scale(1.1);
+    transition: all .3s;
     /* border-radius: 16px; */
     z-index: 100;
+    border: 1px solid transparent;
+    border-bottom-width: 3px;
 }
 
 @media(max-width:1000px) {
@@ -1059,6 +1064,17 @@ p[data-bio]::after {
 
     }
 }
+
+.experience .card:hover {
+    background-size: 90%;
+    border-color: #2F80ED;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .01);
+    box-shadow: 0px 8px 25px rgba(47, 128, 237, 0.35);
+
+}
+
+
+
 
 .timeline-body {
     color: rgb(185 207 202/1) !important;
