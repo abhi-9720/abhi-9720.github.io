@@ -401,7 +401,7 @@ h1 {
     border: none;
     border-radius: 0.6em;
 
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 15px rgba(3, 187, 175, 0.1);
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
@@ -1035,27 +1035,27 @@ p[data-bio]::after {
     padding: 24px;
 
     color: #fff;
-    /* https://img.freepik.com/free-vector/quantum-computer-large-data-processing-database-concept-cpu-isometric-banner-central-computer-processors_74231-1124.jpg?size=626&ext=jpg */
-    background: url('./img/BG_IMG/wesson-wang-y0_vFxOHayg-unsplash.jpg') no-repeat;
+
+    background: linear-gradient(rgba(30, 87, 65, 0.5), rgba(0, 3, 3, 0.5)), url('./img/78255-background-looping-animation.gif') no-repeat;
 
 
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
-
     transition: all 0.8s ease-out;
     border: none;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     display: flex;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     max-width: 900px;
-    transform: scale(1.1);
-    transition: all .3s;
     /* border-radius: 16px; */
     z-index: 100;
-    border: 1px solid transparent;
-    border-bottom-width: 3px;
+
+    border: 2px solid transparent;
+
+    /* box-shadow: rgba(3, 187, 175, 0.2) 0px 12px 28px 0px, rgba(3, 187, 175, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset; */
+
 }
 
 @media(max-width:1000px) {
@@ -1065,17 +1065,6 @@ p[data-bio]::after {
     }
 }
 
-.experience .card:hover {
-    background-size: 90%;
-    border-color: #2F80ED;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .01);
-    box-shadow: 0px 8px 25px rgba(47, 128, 237, 0.35);
-
-}
-
-
-
-
 .timeline-body {
     color: rgb(185 207 202/1) !important;
     font-weight: 400;
@@ -1084,7 +1073,7 @@ p[data-bio]::after {
 }
 
 .experience .card:hover {
-    /* background-size: 130%; */
+    border: 2px solid #0affc2;
 }
 
 
@@ -1103,6 +1092,30 @@ p[data-bio]::after {
 
 .projects .card h4 {
     font-weight: 400;
+}
+
+.projects .card h3::before {
+    counter-increment: section 1;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    position: relative;
+    color: #0affc2;
+}
+
+.experience .card h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #FBFBF2;
+
+
+
+}
+
+.experience .card h4 {
+    margin: 0;
+    margin-bottom: 8px;
 }
 
 .projects .card h3::before {
@@ -1259,10 +1272,6 @@ p[data-bio]::after {
 
     background-position: top -6px left 287px;
     background-size: contain;
-
-
-
-    padding: 20px 35px 50px 35px;
     border-radius: 30px;
     margin-bottom: 50px;
 
@@ -1777,7 +1786,7 @@ img {
     overflow: hidden;
 
     border: 0px solid transparent;
-    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+    box-shadow: 0 .125rem .25rem rgba(3, 187, 175, .075) !important;
 
 }
 
@@ -1786,7 +1795,7 @@ img {
     width: 100%;
     background-size: cover;
     border-radius: 20px;
-    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+    box-shadow: 0 .125rem .25rem rgba(3, 187, 175, .075) !important;
     transition: all 400ms ease-in-out;
 
 }
